@@ -1,12 +1,22 @@
 {
-  "name": "kodnest-premium-build-system",
+  "name": "placement-readiness-app",
   "version": "1.0.0",
   "private": true,
-  "description": "KodNest Premium Build System – a calm, intentional, coherent SaaS design system shell.",
+  "description": "Placement Readiness – practice, assess, and prepare for your dream job.",
   "scripts": {
-    "start": "npx serve ."
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lucide-react": "^0.460.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "recharts": "^2.12.7"
   },
   "devDependencies": {
-    "serve": "^14.2.0"
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.0"
   }
 }
