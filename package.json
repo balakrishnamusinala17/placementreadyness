@@ -1,0 +1,12 @@
+{
+  "name": "kodnest-premium-build-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "KodNest Premium Build System – a calm, intentional, coherent SaaS design system shell.",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}

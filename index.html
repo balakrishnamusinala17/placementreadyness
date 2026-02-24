@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>KodNest Premium Build System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="kn-app">
+    <div class="kn-shell">
+      <!-- TOP BAR -->
+      <header class="kn-top-bar">
+        <div class="kn-top-bar__left">
+          <span class="kn-top-bar__product">KodNest Premium Build System</span>
+        </div>
+        <div class="kn-top-bar__center">
+          <span class="kn-top-bar__progress" data-kn-progress>Step 1 / 4</span>
+        </div>
+        <div class="kn-top-bar__right">
+          <span
+            class="kn-badge kn-badge--status kn-badge--status-idle"
+            data-kn-status-badge
+          >
+            Not Started
+          </span>
+        </div>
+      </header>
+
+      <!-- CONTEXT HEADER -->
+      <section class="kn-context-header">
+        <div class="kn-context-header__content">
+          <h1 class="kn-context-header__title">
+            Establish your build system foundation
+          </h1>
+          <p class="kn-context-header__subtitle">
+            A calm, opinionated surface for designing serious, production-grade
+            experiences without visual drift.
+          </p>
+        </div>
+      </section>
+
+      <!-- MAIN LAYOUT -->
+      <main class="kn-main">
+        <!-- PRIMARY WORKSPACE (70%) -->
+        <section class="kn-primary">
+          <div class="kn-card kn-card--primary">
+            <header class="kn-card__header">
+              <h2 class="kn-card__title">Workspace canvas</h2>
+              <p class="kn-card__subtitle">
+                This is where primary product interactions live. Keep flows
+                direct, language clear, and surfaces predictable.
+              </p>
+            </header>
+
+            <div class="kn-card__body">
+              <div class="kn-grid kn-grid--two-columns">
+                <div class="kn-block">
+                  <h3 class="kn-block__title">Core tokens</h3>
+                  <p class="kn-body-text">
+                    The KodNest system is driven by a small, deliberate set of
+                    tokens. Color, type, and spacing stay fixed so product
+                    choices stay focused on behaviour and clarity.
+                  </p>
+                  <div class="kn-token-list">
+                    <div class="kn-token">
+                      <div class="kn-token__swatch kn-token__swatch--bg"></div>
+                      <div>
+                        <div class="kn-token__label">Background</div>
+                        <div class="kn-token__value">#F7F6F3</div>
+                      </div>
+                    </div>
+                    <div class="kn-token">
+                      <div class="kn-token__swatch kn-token__swatch--text"></div>
+                      <div>
+                        <div class="kn-token__label">Primary text</div>
+                        <div class="kn-token__value">#111111</div>
+                      </div>
+                    </div>
+                    <div class="kn-token">
+                      <div class="kn-token__swatch kn-token__swatch--accent"></div>
+                      <div>
+                        <div class="kn-token__label">Accent</div>
+                        <div class="kn-token__value">#8B0000</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="kn-block">
+                  <h3 class="kn-block__title">Interaction primitives</h3>
+                  <p class="kn-body-text">
+                    Buttons, inputs, and cards share one radius, one border
+                    style, and a single motion curve. Every interaction feels
+                    expected and repeatable.
+                  </p>
+
+                  <div class="kn-component-row">
+                    <button class="kn-button kn-button--primary">
+                      Primary action
+                    </button>
+                    <button class="kn-button kn-button--secondary">
+                      Secondary
+                    </button>
+                  </div>
+
+                  <div class="kn-component-row">
+                    <label class="kn-field">
+                      <span class="kn-field__label">Input label</span>
+                      <input
+                        class="kn-input"
+                        type="text"
+                        placeholder="Calm, intentional placeholder"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="kn-component-row">
+                    <span class="kn-badge kn-badge--status kn-badge--status-progress">
+                      In Progress
+                    </span>
+                    <span class="kn-badge kn-badge--status kn-badge--status-shipped">
+                      Shipped
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- EMPTY / ERROR STATES SHOWCASE -->
+          <div class="kn-stack kn-stack--vertical">
+            <div class="kn-card kn-card--subtle">
+              <div class="kn-state kn-state--empty">
+                <div class="kn-state__content">
+                  <h3 class="kn-state__title">No configuration defined yet</h3>
+                  <p class="kn-state__body">
+                    Start by clarifying what this step should achieve. Capture
+                    one clear outcome, then introduce only the components
+                    required to support it.
+                  </p>
+                  <button class="kn-button kn-button--secondary" type="button">
+                    Define step outcome
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="kn-card kn-card--subtle">
+              <div class="kn-state kn-state--error">
+                <div class="kn-state__content">
+                  <h3 class="kn-state__title">This configuration feels risky</h3>
+                  <p class="kn-state__body">
+                    The current setup may introduce ambiguity for end users.
+                    Consider simplifying choices, adding inline explanation, or
+                    reducing the number of visible controls.
+                  </p>
+                  <ul class="kn-state__list">
+                    <li>Reduce parallel actions in a single view.</li>
+                    <li>Prefer explicit labels over icons alone.</li>
+                    <li>Align copy with one primary decision.</li>
+                  </ul>
+                  <button class="kn-button kn-button--primary" type="button">
+                    Refine this step
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECONDARY PANEL (30%) -->
+        <aside class="kn-secondary">
+          <section class="kn-panel">
+            <header class="kn-panel__header">
+              <h2 class="kn-panel__title">Step guidance</h2>
+              <p class="kn-panel__subtitle">
+                Keep each step narrow. Name the decision, describe the outcome,
+                and provide a single clear next action.
+              </p>
+            </header>
+
+            <div class="kn-panel__body">
+              <label class="kn-field">
+                <span class="kn-field__label">Prompt scaffold</span>
+                <textarea
+                  class="kn-input kn-input--multiline kn-prompt-box"
+                  data-kn-prompt
+                  rows="8"
+                  spellcheck="false"
+                >You are designing a single, focused step in the KodNest Premium Build System. 
+- Clarify the decision this step supports.
+- Use the primary workspace for the main interaction.
+- Use the secondary panel for explanation and proof.</textarea>
+              </label>
+
+              <div class="kn-panel__actions">
+                <button
+                  class="kn-button kn-button--primary"
+                  type="button"
+                  data-kn-copy-prompt
+                >
+                  Copy prompt
+                </button>
+                <button
+                  class="kn-button kn-button--secondary"
+                  type="button"
+                  data-kn-build-lovable
+                >
+                  Build in Lovable
+                </button>
+              </div>
+
+              <div class="kn-panel__actions kn-panel__actions--stacked">
+                <button
+                  class="kn-button kn-button--secondary"
+                  type="button"
+                  data-kn-outcome="success"
+                >
+                  It worked
+                </button>
+                <button
+                  class="kn-button kn-button--secondary"
+                  type="button"
+                  data-kn-outcome="error"
+                >
+                  Error
+                </button>
+                <button
+                  class="kn-button kn-button--secondary"
+                  type="button"
+                  data-kn-outcome="evidence"
+                >
+                  Add screenshot
+                </button>
+              </div>
+
+              <p class="kn-panel__status" data-kn-outcome-message>
+                Choose an outcome to record what happened in this step.
+              </p>
+            </div>
+          </section>
+        </aside>
+      </main>
+
+      <!-- PROOF FOOTER -->
+      <footer class="kn-proof-footer">
+        <div class="kn-proof-footer__content">
+          <div class="kn-proof-footer__heading">
+            <span class="kn-proof-footer__label">Proof of completion</span>
+            <p class="kn-proof-footer__hint">
+              Mark each checkpoint only when you can point to concrete evidence
+              in the workspace.
+            </p>
+          </div>
+
+          <div class="kn-proof-footer__checklist">
+            <div class="kn-proof-item">
+              <label class="kn-checkbox">
+                <input
+                  type="checkbox"
+                  data-kn-proof-checkbox="ui"
+                  aria-describedby="proof-ui-hint"
+                />
+                <span class="kn-checkbox__label">UI Built</span>
+              </label>
+              <input
+                class="kn-input kn-input--compact"
+                type="text"
+                data-kn-proof-input="ui"
+                placeholder="Link or note describing the built UI."
+              />
+              <p class="kn-proof-item__hint" id="proof-ui-hint">
+                Add a short note or link before confirming this checkpoint.
+              </p>
+            </div>
+
+            <div class="kn-proof-item">
+              <label class="kn-checkbox">
+                <input
+                  type="checkbox"
+                  data-kn-proof-checkbox="logic"
+                  aria-describedby="proof-logic-hint"
+                />
+                <span class="kn-checkbox__label">Logic Working</span>
+              </label>
+              <input
+                class="kn-input kn-input--compact"
+                type="text"
+                data-kn-proof-input="logic"
+                placeholder="What behaviour did you validate?"
+              />
+              <p class="kn-proof-item__hint" id="proof-logic-hint">
+                Describe how you verified the behaviour, not just that it ran.
+              </p>
+            </div>
+
+            <div class="kn-proof-item">
+              <label class="kn-checkbox">
+                <input
+                  type="checkbox"
+                  data-kn-proof-checkbox="test"
+                  aria-describedby="proof-test-hint"
+                />
+                <span class="kn-checkbox__label">Test Passed</span>
+              </label>
+              <input
+                class="kn-input kn-input--compact"
+                type="text"
+                data-kn-proof-input="test"
+                placeholder="Reference to test, run, or scenario."
+              />
+              <p class="kn-proof-item__hint" id="proof-test-hint">
+                Capture the exact test name or scenario so it can be repeated.
+              </p>
+            </div>
+
+            <div class="kn-proof-item">
+              <label class="kn-checkbox">
+                <input
+                  type="checkbox"
+                  data-kn-proof-checkbox="deploy"
+                  aria-describedby="proof-deploy-hint"
+                />
+                <span class="kn-checkbox__label">Deployed</span>
+              </label>
+              <input
+                class="kn-input kn-input--compact"
+                type="text"
+                data-kn-proof-input="deploy"
+                placeholder="Where is this live and how to verify?"
+              />
+              <p class="kn-proof-item__hint" id="proof-deploy-hint">
+                Point to an environment and a quick way to confirm it is live.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
